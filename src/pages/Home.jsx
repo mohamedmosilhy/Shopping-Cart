@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <section className="w-full relative">
       <img
-        src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1600&h=900&fit=crop&q=80"
+        src="/images/hero-banner.jpg"
         alt="Fashion Banner"
         className="w-full h-full object-cover"
       />
