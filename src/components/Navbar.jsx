@@ -1,10 +1,14 @@
+import { useContext } from "react";
 import { NavLink } from "react-router";
+import cartContext from "../context/CartContext";
 
 const Navbar = () => {
+  const { getTotalItems } = useContext(cartContext);
+
   return (
     <nav className="flex items-center justify-between shadow-md w-full px-8 py-4 bg-white border-b border-slate-200">
       <div className="logo flex items-center gap-2 font-bold text-2xl font-serif">
-        <img src="/public/favicon.svg" alt="logo" className="w-10" />
+        <img src="/favicon.svg" alt="logo" className="w-10" />
         URBANE
       </div>
       <ul className="flex text-sm font-medium gap-8 tracking-wide uppercase">
@@ -26,7 +30,7 @@ const Navbar = () => {
             to="/cart"
             className="hover:text-slate-600 transition-colors"
           >
-            Cart
+            Cart ({getTotalItems()})
           </NavLink>
         </li>
       </ul>

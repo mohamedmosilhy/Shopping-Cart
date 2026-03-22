@@ -6,6 +6,8 @@ export let products = [
     image: "/images/shirt.jpg",
     category: "shirts",
     description: "A comfortable cotton shirt. Perfect for casual wear.",
+    stockAmount: 10,
+    cartAmount: 0,
   },
   {
     id: "2",
@@ -14,6 +16,8 @@ export let products = [
     image: "/images/jeans.jpg",
     category: "pants",
     description: "Stylish denim jeans with a modern fit.",
+    stockAmount: 15,
+    cartAmount: 0,
   },
   {
     id: "3",
@@ -22,6 +26,8 @@ export let products = [
     image: "/images/polo-shirt.jpg",
     category: "shirts",
     description: "Classic polo shirt with a modern collar design.",
+    stockAmount: 12,
+    cartAmount: 0,
   },
   {
     id: "4",
@@ -30,6 +36,8 @@ export let products = [
     image: "/images/leather-jacket.jpg",
     category: "jackets",
     description: "Premium leather jacket with zip closure and pockets.",
+    stockAmount: 8,
+    cartAmount: 0,
   },
   {
     id: "5",
@@ -38,6 +46,8 @@ export let products = [
     image: "/images/sneakers.jpg",
     category: "shoes",
     description: "Comfortable running sneakers with cushioned sole.",
+    stockAmount: 20,
+    cartAmount: 0,
   },
   {
     id: "6",
@@ -46,6 +56,8 @@ export let products = [
     image: "/images/casual-dress.jpg",
     category: "dresses",
     description: "Elegant casual dress perfect for any occasion.",
+    stockAmount: 11,
+    cartAmount: 0,
   },
   {
     id: "7",
@@ -54,6 +66,8 @@ export let products = [
     image: "/images/chino-pants.jpg",
     category: "pants",
     description: "Slim-fit chino pants in khaki color.",
+    stockAmount: 14,
+    cartAmount: 0,
   },
   {
     id: "8",
@@ -62,6 +76,8 @@ export let products = [
     image: "/images/hoodie.jpg",
     category: "hoodies",
     description: "Cozy fleece hoodie with front pocket.",
+    stockAmount: 18,
+    cartAmount: 0,
   },
   {
     id: "9",
@@ -70,6 +86,8 @@ export let products = [
     image: "/images/summer-dress.jpg",
     category: "dresses",
     description: "Lightweight floral summer dress.",
+    stockAmount: 9,
+    cartAmount: 0,
   },
   {
     id: "10",
@@ -78,6 +96,8 @@ export let products = [
     image: "/images/running-shoes.jpg",
     category: "shoes",
     description: "High-performance running shoes with breathable mesh.",
+    stockAmount: 16,
+    cartAmount: 0,
   },
   {
     id: "11",
@@ -86,6 +106,8 @@ export let products = [
     image: "/images/denim-jacket.jpg",
     category: "jackets",
     description: "Classic blue denim jacket with button closure.",
+    stockAmount: 10,
+    cartAmount: 0,
   },
   {
     id: "12",
@@ -94,6 +116,8 @@ export let products = [
     image: "/images/vneck-tshirt.jpg",
     category: "shirts",
     description: "Soft cotton v-neck t-shirt available in multiple colors.",
+    stockAmount: 25,
+    cartAmount: 0,
   },
   {
     id: "13",
@@ -102,6 +126,8 @@ export let products = [
     image: "/images/shorts.jpg",
     category: "pants",
     description: "Comfortable summer shorts with elastic waist.",
+    stockAmount: 17,
+    cartAmount: 0,
   },
   {
     id: "14",
@@ -110,6 +136,8 @@ export let products = [
     image: "/images/winter-coat.jpg",
     category: "jackets",
     description: "Warm insulated winter coat with hood.",
+    stockAmount: 6,
+    cartAmount: 0,
   },
   {
     id: "15",
@@ -118,5 +146,7 @@ export let products = [
     image: "/images/formal-shirt.jpg",
     category: "shirts",
     description: "Crisp white formal shirt perfect for business wear.",
+    stockAmount: 13,
+    cartAmount: 0,
   },
 ];

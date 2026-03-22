@@ -1,9 +1,13 @@
+import { useNavigate } from "react-router";
+
 const ProductCard = ({ product }) => {
+  const navigate = useNavigate();
+
   return (
     <div
       className="border rounded-lg shadow-md overflow-hidden flex flex-col h-full cursor-pointer hover:shadow-xl transition-shadow  duration-300"
       onClick={() => {
-        window.location.href = `/product/${product.id}`;
+        navigate(`/product/${product.id}`);
       }}
     >
       <div className="h-64 w-full overflow-hidden">
