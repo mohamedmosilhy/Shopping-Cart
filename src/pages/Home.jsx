@@ -7,10 +7,10 @@ const Home = () => {
         <img
           src="/images/hero-banner.jpg"
           alt="Fashion Banner"
-          className="w-full h-[520px] object-cover"
+          className="w-full h-130 object-cover"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/45 to-orange-500/30" />
+        <div className="absolute inset-0 bg-linear-to-r from-slate-900/80 via-slate-900/45 to-orange-500/30" />
 
         <div className="absolute inset-0 flex items-end md:items-center">
           <div className="p-6 md:p-12 max-w-2xl text-white">

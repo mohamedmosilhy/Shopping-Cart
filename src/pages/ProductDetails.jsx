@@ -24,7 +24,7 @@ const ProductDetails = () => {
           <img
             src={product.image}
             alt={product.name}
-            className="w-full h-full min-h-[320px] object-cover"
+            className="w-full h-full min-h-80 object-cover"
           />
         </div>
 
