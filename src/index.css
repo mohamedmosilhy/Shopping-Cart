@@ -4,7 +4,16 @@
   /* Typography */
   --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
-  
+}
+
+:root {
+  --bg: #f7f6f2;
+  --text: #111827;
+  --muted: #667085;
+  --panel: #ffffffcc;
+  --accent: #f97316;
+  --accent-2: #0ea5e9;
+  --ring: #f59e0b;
 }
 
 html {
@@ -15,9 +24,15 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: #ffffff;
-  color: #0f172a;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(circle at 10% 5%, #fde68a99, transparent 26%),
+    radial-gradient(circle at 92% 18%, #a5f3fc99, transparent 24%),
+    radial-gradient(circle at 18% 88%, #fdba7499, transparent 24%),
+    linear-gradient(180deg, #fffcf6 0%, #f5f7fb 100%);
+  color: var(--text);
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 /* Headings use serif font for elegance */
@@ -33,22 +48,42 @@ h6 {
   letter-spacing: -0.02em;
 }
 
-/* Remove default button styles */
 button {
   font-family: inherit;
   cursor: pointer;
 }
 
-/* Smooth images */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* Links */
 a {
   color: inherit;
   text-decoration: none;
-  transition: all var(--transition-base);
+  transition: all 180ms ease;
+}
+
+@keyframes riseFade {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-rise {
+  animation: riseFade 600ms ease both;
+}
+
+.glass-panel {
+  background: var(--panel);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid #ffffffaa;
 }
