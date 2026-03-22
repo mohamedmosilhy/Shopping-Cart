@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import cartContext from "../context/CartContext";
 
 const Navbar = () => {
@@ -19,10 +19,13 @@ const Navbar = () => {
     <nav className="sticky top-0 z-40 w-full border-b border-white/40 glass-panel">
       <div className="max-w-6xl mx-auto px-4 md:px-8 py-3 md:py-4">
         <div className="flex items-center justify-between">
-          <div className="logo flex items-center gap-2 md:gap-3 font-bold text-xl md:text-2xl font-serif">
+          <Link
+            className="logo flex items-center gap-2 md:gap-3 font-bold text-xl md:text-2xl font-serif"
+            to="/"
+          >
             <img src="/favicon.svg" alt="logo" className="w-8 md:w-9" />
             <span className="tracking-wide">URBANE</span>
-          </div>
+          </Link>
 
           <button
             type="button"
